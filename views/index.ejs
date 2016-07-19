@@ -2,6 +2,10 @@
 <html ng-app="BeachApp">
 <head>
 
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
 	<title>Beaches</title>
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
@@ -35,31 +39,42 @@
 			</nav>
 
 			<div class="text-center page-title">
-				<h1>The Beaches of The World</h1>
+				<h1>The Beaches  <span class="beach"> of The World </span></h1>
 			</div>
 		</div>
 	<!-- </div>
 	<div class="container"> -->
-		
+		<hr class="beach">
 		<!-- the picture collections -->
-		<div class="" ng-controller="CollectionsController as col">
+		<div class="row" ng-controller="CollectionsController as col">
 			<!-- <div class="row"> -->
-			<ul ng-repeat="imgObj in col.imageData">
+			<!-- <ul> -->
 
-				<li>
-					<div class="pull-left col-xs-12 col-sm-6 col-md-6 img-holder" >
-						<a href="#" class="thumbnail"> <img class="img-responsive" ng-src={{imgObj.img1}}></a>
-					</div><div class="col-xs-12 col-sm-6 col-md-6 img-holder">
-						<a href="#" class="thumbnail"> <img class="img-responsive" ng-src={{imgObj.img2}}></a>
+				<li ng-repeat="imgObj in col.imageData">
+					<div class="pull-left col-xs-12 col-sm-6 col-lg-6 img-holder">
+						<a href="#" class="thumbnail"><img class="img-responsive" ng-src={{imgObj.img1}}></a>
+					</div>
+					<div class="pull-right col-xs-12 col-sm-6 col-lg-6 img-holder">
+						<a href="#" class="thumbnail"><img class="img-responsive" ng-src={{imgObj.img2}}></a>
 					</div>
 				</li>
 
-			</ul>
+			<!-- </ul> -->
 
 			<!-- </div> -->
 		</div>
 
 	<!-- footer -->
+	
+	</div>
+	<div class="footer">
+		<div class="container-fluid">
+			<div class="row text-center">
+				<div class="col-sm-4"><span class="glyphicon glyphicon-picture"></span> MORE PICS</div>
+				<div class="col-sm-4"><span class="glyphicon glyphicon-camera"></span> UPLOAD PICS</div>
+				<div class="col-sm-4"><span class="glyphicon glyphicon-share"></span> SHARE PICS</div>
+			</div>
+		</div>
 	</div>
 
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->

@@ -12,14 +12,15 @@
 
 .img-holder
 {
-	background: no-repeat center center fixed;
-	-webkit-background-size: cover;
+	/*background: no-repeat center fixed;*/
+	/*-webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
-    -o-background-size: cover;
+    -o-background-size: cover;*/
     /*height:100%;
     border: 1px solid black;*/
     /*width:100%;*/
+    /*border: 1px solid black;*/
 }
 li
 {
@@ -27,6 +28,35 @@ li
 	width: 100%;
 }
 
+// Classes
+.pull-left 
+{
+  float: left !important;
+}
+.pull-right 
+{
+  float: right !important;
+}
+
+.navbar-brand
+{
+	font-size: 3em;
+}
+
+button.navbar-toggle.collapsed
+{
+	margin-top: 55px;
+}
+hr
+{
+	margin-top: 300px;
+	border-color: #FD7539;
+}
+.col-sm-4
+{
+	margin-top: 70px;
+	font-size: 2em;
+}
 .navbar
 {
 	height: 100px;
@@ -39,6 +69,13 @@ li
 	margin-bottom: 50px;
 }
 
+.footer
+{
+	width: 100%;
+	height:200px;
+	background-color: #FD7539;
+	
+}
 .beach
 {
 	color: #FD7539;
@@ -46,9 +83,4 @@ li
 .navbar-brand
 {
 	margin-top: 50px;
-}
-
-.pull-left
-{
-	float:left;
 }
