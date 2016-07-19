@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html ng-app="BeachApp">
+<head>
+
+	<title>Beaches</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+	<link rel="stylesheet" type="text/css" href="http://localhost:3000/static/css/index.css">
+
+</head>
+<body>
+	<div class="container">
+
+		<!-- top part of page -->
+		<div class="top-part">
+			<!-- navbar -->
+			<nav class="navbar navbar-default navbar-fixed-top">
+			  <div class="container-fluid">
+			    
+			    <!-- Brand and toggle get grouped for better mobile display -->
+			    <div class="navbar-header">
+			      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+			        <span class="sr-only">Toggle navigation</span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			      </button>
+			      <a class="navbar-brand" href="#">BEA<span class="beach">CHES</span></a>
+			    </div>
+			  </div>
+			</nav>
+
+			<div class="text-center page-title">
+				<h1>The Beaches of The World</h1>
+			</div>
+		</div>
+	<!-- </div>
+	<div class="container"> -->
+		
+		<!-- the picture collections -->
+		<div class="" ng-controller="CollectionsController as col">
+			<!-- <div class="row"> -->
+			<ul ng-repeat="imgObj in col.imageData">
+
+				<li>
+					<div class="pull-left col-xs-12 col-sm-6 col-md-6 img-holder" >
+						<a href="#" class="thumbnail"> <img class="img-responsive" ng-src={{imgObj.img1}}></a>
+					</div><div class="col-xs-12 col-sm-6 col-md-6 img-holder">
+						<a href="#" class="thumbnail"> <img class="img-responsive" ng-src={{imgObj.img2}}></a>
+					</div>
+				</li>
+
+			</ul>
+
+			<!-- </div> -->
+		</div>
+
+	<!-- footer -->
+	</div>
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.js"></script>
+
+	<script type="text/javascript" src="/static/ang-controllers/beachApp.js"></script>
+</body>
+</html>

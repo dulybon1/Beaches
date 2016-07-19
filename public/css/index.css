@@ -1,0 +1,54 @@
+.container
+{
+
+	background: url('/static/img/main-beach.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    height:100%;
+    width: 100%;
+}
+
+.img-holder
+{
+	background: no-repeat center center fixed;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    /*height:100%;
+    border: 1px solid black;*/
+    /*width:100%;*/
+}
+li
+{
+	list-style: none;
+	width: 100%;
+}
+
+.navbar
+{
+	height: 100px;
+	opacity: 0.5;
+}
+
+.page-title
+{
+	margin-top: 140px;
+	margin-bottom: 50px;
+}
+
+.beach
+{
+	color: #FD7539;
+}
+.navbar-brand
+{
+	margin-top: 50px;
+}
+
+.pull-left
+{
+	float:left;
+}
