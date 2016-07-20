@@ -4,7 +4,8 @@
 
 	<meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
 
 	<title>Beaches</title>
 	<!-- Latest compiled and minified CSS -->
@@ -17,7 +18,7 @@
 
 </head>
 <body>
-	<div class="container">
+	<div class="container" id="container">
 
 		<!-- top part of page -->
 		<div class="top-part">
@@ -42,37 +43,31 @@
 				<h1>The Beaches  <span class="beach"> of The World </span></h1>
 			</div>
 		</div>
-	<!-- </div>
-	<div class="container"> -->
-		<hr class="beach">
+	
+		<br class="beach">
 		<!-- the picture collections -->
 		<div class="row" ng-controller="CollectionsController as col">
-			<!-- <div class="row"> -->
-			<!-- <ul> -->
 
-				<li ng-repeat="imgObj in col.imageData">
-					<div class="pull-left col-xs-12 col-sm-6 col-lg-6 img-holder">
-						<a href="#" class="thumbnail"><img class="img-responsive" ng-src={{imgObj.img1}}></a>
-					</div>
-					<div class="pull-right col-xs-12 col-sm-6 col-lg-6 img-holder">
-						<a href="#" class="thumbnail"><img class="img-responsive" ng-src={{imgObj.img2}}></a>
-					</div>
-				</li>
+			<div ng-cloak ng-repeat="imgObj in col.imageData">
+				<div class="pull-left col-xs-12 col-sm-6 col-lg-4 img-holder">
+					<a href="#" class="thumbnail"><img class="img-responsive" ng-src={{imgObj.img1}}></a>
+				</div>
+				<div class="pull-right col-xs-12 col-sm-6 col-lg-4 img-holder">
+					<a href="#" class="thumbnail"><img class="img-responsive" ng-src={{imgObj.img2}}></a>
+				</div>
+			</div>
 
-			<!-- </ul> -->
-
-			<!-- </div> -->
 		</div>
-
-	<!-- footer -->
 	
 	</div>
+
+	<!-- footer -->
 	<div class="footer">
 		<div class="container-fluid">
 			<div class="row text-center">
-				<div class="col-sm-4"><span class="glyphicon glyphicon-picture"></span> MORE PICS</div>
-				<div class="col-sm-4"><span class="glyphicon glyphicon-camera"></span> UPLOAD PICS</div>
-				<div class="col-sm-4"><span class="glyphicon glyphicon-share"></span> SHARE PICS</div>
+				<div class="col-sm-4 col-xs-4"><span class="glyphicon glyphicon-picture"></span> MORE PICS</div>
+				<div class="col-sm-4 col-xs-4"><span class="glyphicon glyphicon-camera"></span> UPLOAD </div>
+				<div class="col-sm-4 col-xs-4"><span class="glyphicon glyphicon-share"></span> SHARE </div>
 			</div>
 		</div>
 	</div>

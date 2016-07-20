@@ -1,72 +1,115 @@
-.container
-{
-
-	background: url('/static/img/main-beach.jpg') no-repeat center center fixed;
+@media (min-width: 701px) {
+  #container {
+    background: url('/static/img/main-beach_1920.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
     height:100%;
     width: 100%;
+    overflow: hidden;
+  }
 }
 
-.img-holder
-{
-	/*background: no-repeat center fixed;*/
-	/*-webkit-background-size: cover;
-    -moz-background-size: cover;
+@media (max-width: 700px) {
+  #container {      
+     background: url('/static/img/main-beach_md.jpg') no-repeat center center fixed;
+     -webkit-background-size: cover;
+    /*-moz-background-size: cover;*/
     background-size: cover;
-    -o-background-size: cover;*/
-    /*height:100%;
-    border: 1px solid black;*/
-    /*width:100%;*/
-    /*border: 1px solid black;*/
-}
-li
-{
-	list-style: none;
-	width: 100%;
+    -o-background-size: cover;
+    height:100%;
+    width: 100%;
+    overflow: hidden;
+  }
 }
 
-// Classes
-.pull-left 
-{
-  float: left !important;
-}
-.pull-right 
-{
-  float: right !important;
+
+/*Iphone css*/
+@media screen and (max-device-width: 700px){
+    body{
+        -webkit-text-size-adjust:none;
+        font-family:Helvetica, Arial, Verdana, sans-serif;
+        padding:5px;
+    }
+
+    div{
+        clear:both!important;
+        display:block!important;
+        width:100%!important;
+        float:none!important;
+        margin:0!important;
+        padding:0!important;
+    }
+
+    #nav,#nav li{
+        float:none!important;
+        clear:both!important;
+        margin:0 0 20px 0!important;
+        display:block;
+        padding:0;
+        text-align:left!important;
+        width:100%;
+    }
+    #nav{
+        border:1px solid #ccc;
+        padding:5px;
+        border-radius:5px;
+    }
+    #nav li{
+        margin:0!important;
+    }
+    #nav li a{
+        display:block;
+    }
+
+    img{
+        max-width:100%;
+        height:auto;
+    }
 }
 
+/*end Iphone*/
+body
+{
+  height:100%;
+  overflow: auto;
+}
+
+
+/*.img-holder
+{
+
+}
+*/
 .navbar-brand
 {
 	font-size: 3em;
+	margin-top: 50px;
+}
+
+.col-sm-4
+{
+	margin-top: 70px;
+	font-size: 2em;
+}
+
+/*navbar styling*/
+.navbar
+{
+	height: 110px;
+	opacity: 0.5;
 }
 
 button.navbar-toggle.collapsed
 {
 	margin-top: 55px;
 }
-hr
-{
-	margin-top: 300px;
-	border-color: #FD7539;
-}
-.col-sm-4
-{
-	margin-top: 70px;
-	font-size: 2em;
-}
-.navbar
-{
-	height: 100px;
-	opacity: 0.5;
-}
 
 .page-title
 {
-	margin-top: 140px;
-	margin-bottom: 50px;
+	margin-top: 200px;
+	margin-bottom: 10%;
 }
 
 .footer
@@ -79,8 +122,4 @@ hr
 .beach
 {
 	color: #FD7539;
-}
-.navbar-brand
-{
-	margin-top: 50px;
 }
